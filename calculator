@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class calculator{public static void main(String[]arg){
+Scanner sc= new Scanner(System.in);
+System.out.println("enter first number");
+int a = sc.nextInt();
+System.out.println("enter second number");
+int b= sc.nextInt();
+System.out.println("enter your operation +,-,*,/");
+char operation= sc.next().charAt(0);
+if(operation=='+'){
+System.out.println("sum is"+ (a+b));}
+else if(operation=='-'){
+System.out.println("difference is" +(a-b));}
+else if(operation=='*'){
+System.out.println("multiply is" +(a*b));}
+else if(operation=='/')
+{if (b != 0) {
+                System.out.println("Quotient is " + (a / b));
+            } else {
+                System.out.println("Error: zero division.");
+            }
+        } else {
+            System.out.println("Invalid operation.");
+        }
+}
+}
